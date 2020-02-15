@@ -1,0 +1,141 @@
+import React, { Component } from "react";
+import { Row, Col, Form, Card } from "react-bootstrap";
+import "./Profile.css";
+import { Link } from "react-router-dom";
+
+class Profile extends Component {
+  render() {
+    return (
+      <div>
+        <Row>
+          <Col md={4}>
+            <div className="kiri-Profile">
+              <Link to="/Dashboard">
+                <img
+                  style={{
+                    marginLeft: "30px",
+                    transform: "rotate(180deg)",
+                    height: "70px",
+                    marginBottom: "-143px"
+                  }}
+                  src={require("./Image/arrow.png")}
+                />
+              </Link>
+              <div>
+                <Link to="/EditProfile">
+                  <img src={require("./Image/kucing3.jpg")} />
+                </Link>
+              </div>
+              <span>Jojon</span>
+            </div>
+            <div className="setting">
+              <p>Account Setting</p>
+            </div>
+            <div className="account">
+              <p>Email &nbsp; faishalalbarkah@gmail.com</p>
+              <hr
+                style={{
+                  marginLeft: "-20px",
+                  marginTop: "-10px",
+                  marginBottom: "6px"
+                }}
+              />
+              <p>Phone &nbsp; 085921311291</p>
+            </div>
+            <div className="discovery">
+              <p>Discovery Setting</p>
+            </div>
+            <div className="paling-bawah">
+              <p>
+                Maximum Distance
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12Km.
+              </p>
+              <input className="range" type="range" />
+            </div>
+            <div>
+              <Form.Group className="age-form">
+                <Form.Label>Age</Form.Label>
+                <Form.Control as="select" value="Choose...">
+                  <option>Child</option>
+                  <option>Tenager</option>
+                  <option>Adult</option>
+                </Form.Control>
+              </Form.Group>
+              <Form.Group className="spesies-form">
+                <Form.Label>Spesies</Form.Label>
+                <Form.Control as="select" value="Choose...">
+                  <option>Cat</option>
+                  <option>Dog</option>
+                  <option>Rabit</option>
+                  <option>Bird</option>
+                  <option>Sugar Glider</option>
+                </Form.Control>
+              </Form.Group>
+              <button className="login-btn">Login</button>
+            </div>
+          </Col>
+          <Col md={8}>
+            <div className="Profile-background">
+              <div>
+                <Link to="/AddPet">
+                  <button className="atas-btn">
+                    <p>Add Pet</p>
+                  </button>
+                </Link>
+              </div>
+              <div className="Profile-kanan">
+                <img src={require("./Image/meong.jpg")} />
+                <Card.Body className="card-body">
+                  <Card.Title
+                    style={{
+                      fontFamily: "Avenir",
+                      fontFamily: "fantasy",
+                      color: "black",
+                      fontSize: "30px"
+                    }}
+                  >
+                    Jambrot
+                    <span
+                      style={{
+                        fontSize: "25px",
+                        color: "#7e7e7e",
+                        marginLeft: "142px",
+                        opacity: "0.6"
+                      }}
+                    >
+                      Lion
+                    </span>
+                  </Card.Title>
+
+                  <div className="orang">
+                    <p>Jainudin</p>
+                    <img src={require("./Image/orangprofile.png")} />
+                  </div>
+                  <div className="map">
+                    <img src={require("./Image/mapprofile.png")} />
+                    <p>12 Kilometer dari sono</p>
+                  </div>
+                  <div className="gender">
+                    <img src={require("./Image/gender.png")} />
+                    <p>Male - Audit</p>
+                  </div>
+                  <div className="phone">
+                    <img src={require("./Image/phone.png")} />
+                    <p>Phone Breeder : 085678908765</p>
+                  </div>
+                  <button className="edit-btn">Edit</button>
+                </Card.Body>
+              </div>
+            </div>
+          </Col>
+        </Row>
+      </div>
+    );
+  }
+}
+
+export default Profile;

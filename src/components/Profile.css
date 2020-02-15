@@ -1,0 +1,251 @@
+.Profile-background {
+  background-image: url("./Image/backgroundprofile.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.atas-btn {
+  width: 80px;
+  height: 30px;
+  float: right;
+  margin-right: 40px;
+  margin-top: 15px;
+  border-radius: 40%;
+  background: linear-gradient(#ec7ab7, #ffc75a);
+}
+
+.atas-btn > p {
+  font-size: 18px;
+  margin-top: -3px;
+}
+
+.kiri-Profile {
+  background: linear-gradient(#ec7ab7, #ffc75a);
+  padding-top: 1px;
+  padding-bottom: 18px;
+  margin-top: -29px;
+}
+
+.kiri-Profile > div {
+  margin-left: 130px;
+  margin-top: 20px;
+  height: 80px;
+  width: 80px;
+  overflow: hidden;
+  border-radius: 50%;
+  /* display: inline-block; */
+  /* position: relative; */
+}
+
+.arow-icon > img {
+  margin-left: 20px;
+}
+
+.kiri-Profile > div > img {
+  width: 120px;
+  /* position: absolute;
+    left: -16px; */
+}
+
+.kiri-Profile > span {
+  color: white;
+  margin-left: 230px;
+  font-size: 45px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  float: left;
+  margin-top: -75px;
+}
+
+.setting {
+  background-color: #ededed;
+  height: 50px;
+}
+
+.setting > p {
+  color: #ec7ab7;
+  padding-left: 40px;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.account {
+  background-color: #ffffff;
+  height: 80px;
+  padding-left: 40px;
+  padding-top: 10px;
+}
+
+.account > p {
+  font-size: 15px;
+}
+
+.discovery {
+  background-color: #ededed;
+  height: 50px;
+  padding-left: 40px;
+}
+
+.discovery > p {
+  color: #ec7ab7;
+  padding-left: 0px;
+  font-size: 20px;
+  padding-top: 7px;
+}
+
+.paling-bawah {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.paling-bawah > p {
+  font-size: 18px;
+}
+
+/* .paling-bawah > input {
+  width: 70%;
+  margin-left: 32px;
+  border-radius: 10px;
+  background: linear-gradient(
+    328,
+    08deg,
+    #f32121 0.82%,
+    rgba(243, 33, 33) 97.97%
+  );
+} */
+
+.age-form {
+  margin-left: 35px;
+  width: 75%;
+  margin-top: 20px;
+}
+
+.spesies-form {
+  margin-left: 35px;
+  width: 75%;
+  margin-top: 20px;
+}
+
+.login-btn {
+  margin-left: 200px;
+  border-radius: 50%;
+  width: 70px;
+  height: 50px;
+  background: linear-gradient(180deg, #ec7a7a, #ec7ab7 100%);
+}
+
+.Profile-kanan > img {
+  width: 320px;
+  height: 380px;
+  margin-left: 300px;
+  margin-top: 20px;
+  border-radius: 3%;
+}
+
+.card-body {
+  background-color: #ffffff;
+  width: 320px;
+  margin-left: 300px;
+  height: 250px;
+}
+
+.orang > img {
+  width: 30px;
+  height: 30px;
+  margin-top: -87px;
+}
+
+.orang > p {
+  font-size: 16px;
+  margin-left: 46px;
+  font-family: Avenir;
+  color: #838080;
+}
+
+.map > img {
+  width: 30px;
+  height: 30px;
+  margin-top: -55px;
+}
+
+.map > p {
+  font-size: 16px;
+  margin-left: 46px;
+  font-family: Avenir;
+  color: #838080;
+  margin-top: -49px;
+}
+
+.gender > img {
+  width: 30px;
+  height: 30px;
+  margin-top: -16px;
+}
+
+.gender > p {
+  font-size: 16px;
+  margin-left: 46px;
+  font-family: Avenir;
+  color: #838080;
+  margin-top: -29px;
+}
+
+.phone > img {
+  width: 30px;
+  height: 30px;
+  margin-top: -2px;
+}
+
+.phone > p {
+  font-size: 16px;
+  margin-left: 46px;
+  font-family: Avenir;
+  color: #838080;
+  margin-top: -29px;
+}
+
+.edit-btn {
+  margin-left: 112px;
+  width: 80px;
+  border-radius: 40%;
+  background: linear-gradient(180deg, #ec7a7a, #ec7ab7 100%);
+}
+
+.range {
+  -webkit-appearance: none;
+  vertical-align: middle;
+  outline: none;
+  border: none;
+  padding: 0;
+  background: none;
+}
+
+.range::-webkit-slider-runnable-track {
+  background-color: #d7dbdd;
+  height: 6px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  border-radius: 100%;
+  background-color: #606670;
+  height: 18px;
+  width: 18px;
+  margin-top: -7px;
+}
+
+.range::-webkit-slider-runnable-track {
+  background: linear-gradient(
+    328.08deg,
+    #f32121 0.82%,
+    rgba(243, 33, 33, 0.23) 97.97%
+  );
+}
+
+.range::-webkit-slider-thumb {
+  background-color: #f32121;
+  box-shadow: 0 0 5px rgba(245, 240, 240, 0.5);
+}

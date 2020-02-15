@@ -1,0 +1,79 @@
+/* yang kiri sudah gabung css dengan Profile */
+/* kiri */
+.Edit-Profile-background {
+  background-image: url("./Image/backgroundprofile.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 20px;
+  color: #e1e1e1;
+}
+
+.background-dalem {
+  width: 400px;
+  height: 600px;
+  background-color: #e1e1e1;
+  margin-left: 250px;
+  margin-top: 20px;
+  border-radius: 2%;
+}
+
+.background-lebih-dalem > img {
+  border-radius: 2%;
+  height: 150px;
+}
+
+.X {
+  position: absolute;
+  margin-left: 82px;
+  margin-top: -17px;
+  height: 25px;
+  width: 25px;
+  padding: 0px;
+  border-radius: 50%;
+  background-color: #f62424;
+}
+
+.X > p {
+  margin-left: 7px;
+  font-family: fantasyy;
+  color: white;
+}
+
+.card-body {
+  background-color: #ffffff;
+  width: 320px;
+  margin-left: 300px;
+  height: 250px;
+}
+
+.scroll-bawah {
+  height: 190px;
+  width: 400px;
+  margin-top: 238px;
+  border-radius: 3%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.scroll-bawah > p {
+  font-size: 30px;
+  color: black;
+  font-family: fantasy;
+  margin-left: 10px;
+}
+
+.scroll-bawah > input {
+  width: 384px;
+}
+
+.scroll-bawah > button {
+  margin-left: 175px;
+  background: linear-gradient(180deg, #ec7a7a 0%, #ec7ab7 100%);
+  border-radius: 80px;
+}
+
+.scrol {
+  overflow: hidden;
+}
