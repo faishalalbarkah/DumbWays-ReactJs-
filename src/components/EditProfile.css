@@ -17,6 +17,7 @@
   margin-left: 250px;
   margin-top: 20px;
   border-radius: 2%;
+  overflow: hidden;
 }
 
 .background-lebih-dalem > img {
@@ -49,12 +50,10 @@
 }
 
 .scroll-bawah {
-  height: 190px;
-  width: 400px;
-  margin-top: 238px;
+  height: 239px;
+  width: 416px;
+  margin-top: 10px;
   border-radius: 3%;
-  overflow: scroll;
-  overflow-x: hidden;
 }
 
 .scroll-bawah > p {
@@ -65,7 +64,7 @@
 }
 
 .scroll-bawah > input {
-  width: 384px;
+  width: 381px;
 }
 
 .scroll-bawah > button {
@@ -74,6 +73,16 @@
   border-radius: 80px;
 }
 
+.scroll-bawah > textarea {
+  width: 381px;
+}
+
 .scrol {
   overflow: hidden;
+}
+
+.scroll-atas {
+  height: 617px;
+  width: 415px;
+  overflow: scroll;
 }

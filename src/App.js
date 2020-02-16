@@ -6,6 +6,7 @@ import Dashboard from "./components/Dashboard";
 import Profile from "./components/Profile";
 import EditProfile from "./components/EditProfile";
 import AddPet from "./components/AddPet";
+import Payment from "./components/Payment";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 // import Footer from './components/Footer';
 
@@ -42,6 +43,16 @@ function App() {
       <Switch>
         <Route path="/AddPet">
           <AddPet />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path="/Payment">
+          <Payment />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path="/Landing">
+          <Landing />
         </Route>
       </Switch>
     </Router>

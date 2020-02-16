@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Kucing garong",
+    "image": "http://localhost:3000/Image/bawaan1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Kucing garong",
+    "image": "http://localhost:3000/Image/bawaan2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Kucing garong",
+    "image": "http://localhost:3000/Image/bawaan3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Kucing garong",
+    "image": "http://localhost:3000/Image/bawaan4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Kucing garong",
+    "image": "http://localhost:3000/Image/bawaan5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Kucing garong",
+    "image": "http://localhost:3000/Image/bawaan6.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Kucing garong",
+    "image": "http://localhost:3000/Image/bawaan7.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Kucing garong",
+    "image": "http://localhost:3000/Image/bawaan8.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Kucing garong",
+    "image": "http://localhost:3000/Image/bawaan9.jpg"
+  }
+]

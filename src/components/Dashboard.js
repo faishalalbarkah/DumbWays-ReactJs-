@@ -14,6 +14,7 @@ import {
 import Modallogin from "./Modallogin";
 import "./Dashboard.css";
 import { Link } from "react-router-dom";
+import Datakucing from "../data/datakucing.json";
 
 class Dashboard extends Component {
   render() {
@@ -33,22 +34,59 @@ class Dashboard extends Component {
                   </Link>
                 </div>
                 <span>Jojon</span>
-                <p>&#8659;</p>
+                <p style={{ transform: "rotate(270deg)" }}>
+                  <svg
+                    width="27"
+                    height="41"
+                    viewBox="0 0 27 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      width="31.6598"
+                      height="4.87084"
+                      rx="2.43542"
+                      transform="matrix(-0.791024 0.611785 0.395796 0.918338 25.0437 0)"
+                      fill="white"
+                    />
+                    <rect
+                      width="31.6598"
+                      height="4.87084"
+                      rx="2.43542"
+                      transform="matrix(-0.791024 -0.611786 -0.395797 0.918338 26.981 36.4551)"
+                      fill="white"
+                    />
+                  </svg>
+                </p>
               </div>
 
               <div className="header">
                 <p>Match</p>
               </div>
-
-              <div style={{ padding: "25px" }}>
-                <Row>
-                  <Col sm={4}>
-                    <Card className="Gambar">
-                      <img src={require("./Image/kucing4.jpg")} />
-                      <p>Jontor</p>
-                    </Card>
-                  </Col>
-                  <Col sm={4}>
+              <div style={{ width: "100%", overflow: "hidden" }}>
+                <div
+                  style={{
+                    height: "472px",
+                    width: "104%",
+                    overflow: "scroll"
+                  }}
+                >
+                  <Row
+                    style={{
+                      padding: "25px",
+                      height: "50px !important",
+                      overFlow: "hidden"
+                    }}
+                  >
+                    {Datakucing.map(m => (
+                      <Col sm={4}>
+                        <Card className="Gambar">
+                          <img src={m.image} />
+                          <p>{m.name}</p>
+                        </Card>
+                      </Col>
+                    ))}
+                    {/* <Col sm={4}>
                     <Card className="Gambar">
                       <img src={require("./Image/kucing5.jpg")} />
                       <p>Jarwo</p>
@@ -59,8 +97,9 @@ class Dashboard extends Component {
                       <img src={require("./Image/kucing6.jpg")} />
                       <p>Suep</p>
                     </Card>
-                  </Col>
-                </Row>
+                  </Col> */}
+                  </Row>
+                </div>
               </div>
             </Col>
             {/* end kiri */}

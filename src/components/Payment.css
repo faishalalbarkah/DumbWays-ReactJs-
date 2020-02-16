@@ -1,0 +1,50 @@
+.modal-payment {
+  background: linear-gradient(180deg, #ec7ab7 0%, #ec7a7a 100%) !important;
+  height: 600px;
+}
+
+.modal-payment > h1 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+.modal-body-payment > p {
+  text-align: center;
+  color: white;
+}
+
+.modal-body-payment > h4 {
+  margin-top: 15px;
+  color: white;
+  text-align: center;
+}
+
+.input-payment {
+  width: 400px;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 4px;
+  height: 36px;
+}
+
+.img-payment {
+  height: 250px;
+  margin-left: 124px;
+  margin-top: 20px;
+}
+
+.btn-payment {
+  background: #ffffff;
+  border-radius: 50px;
+  margin-top: 10px;
+  margin-left: 189px;
+  width: 150px;
+  height: 50px;
+}
+
+.btn-payment > p {
+  padding-top: 10px;
+  font-weight: bold;
+}

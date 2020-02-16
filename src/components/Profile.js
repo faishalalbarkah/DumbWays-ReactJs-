@@ -1,7 +1,10 @@
 import React, { Component } from "react";
-import { Row, Col, Form, Card } from "react-bootstrap";
+import { Row, Col, Form, Card, ButtonToolbar, Button } from "react-bootstrap";
 import "./Profile.css";
 import { Link } from "react-router-dom";
+import Payment from "./Payment";
+import EditPet from "./EditProfile";
+import Landing from "./Landing";
 
 class Profile extends Component {
   render() {
@@ -75,17 +78,17 @@ class Profile extends Component {
                   <option>Sugar Glider</option>
                 </Form.Control>
               </Form.Group>
-              <button className="login-btn">Login</button>
+              <Link to="/Landing">
+                <button className="login-btn">Logout</button>
+              </Link>
             </div>
           </Col>
           <Col md={8}>
             <div className="Profile-background">
               <div>
-                <Link to="/AddPet">
-                  <button className="atas-btn">
-                    <p>Add Pet</p>
-                  </button>
-                </Link>
+                <ButtonToolbar>
+                  <Payment />
+                </ButtonToolbar>
               </div>
               <div className="Profile-kanan">
                 <img src={require("./Image/meong.jpg")} />
@@ -127,7 +130,9 @@ class Profile extends Component {
                     <img src={require("./Image/phone.png")} />
                     <p>Phone Breeder : 085678908765</p>
                   </div>
-                  <button className="edit-btn">Edit</button>
+                  <Link to="/EditProfile">
+                    <button className="edit-btn">Edit</button>
+                  </Link>
                 </Card.Body>
               </div>
             </div>

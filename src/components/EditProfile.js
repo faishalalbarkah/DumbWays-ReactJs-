@@ -75,16 +75,18 @@ class EditProfile extends Component {
                   <option>Sugar Glider</option>
                 </Form.Control>
               </Form.Group>
-              <button className="login-btn">Login</button>
+              <Link to="/Landing">
+                <button className="login-btn">Logout</button>
+              </Link>
             </div>
           </Col>
 
           <Col md={8}>
             <div className="Edit-Profile-background">
               <div className="background-dalem">
-                <div>
+                <div className="scroll-atas">
                   <Row style={{ margin: "10px", paddingTop: "10px" }}>
-                    <Col sm={4}>
+                    <Col sm={4} className="mt-2">
                       <Card className="background-lebih-dalem">
                         <img src={require("./Image/buaya.jpg")} />
                       </Card>
@@ -92,7 +94,7 @@ class EditProfile extends Component {
                         <p>X</p>
                       </div>
                     </Col>
-                    <Col sm={4}>
+                    <Col sm={4} className="mt-2">
                       <Card className="background-lebih-dalem">
                         <img src={require("./Image/buaya.jpg")} />
                       </Card>
@@ -100,7 +102,7 @@ class EditProfile extends Component {
                         <p>X</p>
                       </div>
                     </Col>
-                    <Col sm={4}>
+                    <Col sm={4} className="mt-2">
                       <Card className="background-lebih-dalem">
                         <img src={require("./Image/buaya.jpg")} />
                       </Card>
@@ -108,22 +110,68 @@ class EditProfile extends Component {
                         <p>X</p>
                       </div>
                     </Col>
+                    <Col sm={4} className="mt-2">
+                      <Card className="background-lebih-dalem">
+                        <img src={require("./Image/buaya.jpg")} />
+                      </Card>
+                      <div className="X">
+                        <p>X</p>
+                      </div>
+                    </Col>
+                    <Col sm={4} className="mt-2">
+                      <Card className="background-lebih-dalem">
+                        <img src={require("./Image/buaya.jpg")} />
+                      </Card>
+                      <div className="X">
+                        <p>X</p>
+                      </div>
+                    </Col>
+                    <Col sm={4} className="mt-2">
+                      <Card className="background-lebih-dalem">
+                        <img src={require("./Image/buaya.jpg")} />
+                      </Card>
+                      <div className="X">
+                        <p>X</p>
+                      </div>
+                    </Col>
+                    <Col sm={4} className="mt-2">
+                      <Card className="background-lebih-dalem">
+                        <img src={require("./Image/buaya.jpg")} />
+                      </Card>
+                      <div className="X">
+                        <p>X</p>
+                      </div>
+                    </Col>
+                    <Col sm={4} className="mt-2">
+                      <Card className="background-lebih-dalem">
+                        <img src={require("./Image/buaya.jpg")} />
+                      </Card>
+                      <div className="X">
+                        <p>X</p>
+                      </div>
+                    </Col>
+                    <Col sm={4} className="mt-2">
+                      <Card className="background-lebih-dalem">
+                        <img src={require("./Image/buaya.jpg")} />
+                      </Card>
+                      <div className="X">
+                        <p>X</p>
+                      </div>
+                    </Col>
+                    <div className="scroll-bawah">
+                      <p>Nama Pet</p>
+                      <input type="text" />
+                      <p>Breeder</p>
+                      <input type="text" />
+                      <p>Gender</p>
+                      <input type="text" />
+                      <p>Age</p>
+                      <input type="text" />
+                      <p>About Pet</p>
+                      <textarea cols="80"></textarea>
+                      <button>Save</button>
+                    </div>
                   </Row>
-                </div>
-                <div className="scrol">
-                  <div className="scroll-bawah">
-                    <p>Nama Pet</p>
-                    <input type="text" />
-                    <p>Breeder</p>
-                    <input type="text" />
-                    <p>Gender</p>
-                    <input type="text" />
-                    <p>Age</p>
-                    <input type="text" />
-                    <p>About Pet</p>
-                    <textarea cols="80"></textarea>
-                    <button>Save</button>
-                  </div>
                 </div>
               </div>
             </div>

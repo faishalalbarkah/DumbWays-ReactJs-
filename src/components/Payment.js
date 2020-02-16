@@ -1,59 +1,55 @@
-import {Component} from 'react';
+import React, { Component, useState } from "react";
+import { Modal, Form, Button } from "react-bootstrap";
+import "./Payment.css";
+import { Link } from "react-router-dom";
 
+function Payment() {
+  const [show, setShow] = useState(false);
 
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
-class Payment extends Component{
-   function Payment() {
-    const [show, setShow] = useState(false);
+  return (
+    <>
+      <button
+        className="atas-btn"
+        variant="outline-danger"
+        onClick={handleShow}
+      >
+        <p>Add Pet</p>
+      </button>
 
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+      <Modal show={show} onHide={handleClose}>
+        <div className="modal-payment">
+          <h1>Premium</h1>
 
-    return (
-        <>
-            <Button
-                className="btn-modal"
-                variant="outline-danger"
-                onClick={handleShow}
-            >
-                Login
-      </Button>
-
-            <div>
-                <Modal show={show} onHide={handleClose}>
-                    <div>
-                        <Modal.Title className="formlogin">Login</Modal.Title>
-                        <p className="ModalX" onClick={handleClose}>
-                            &#10060;
+          <div className="modal-body-payment">
+            <p>Upgrade Breednder mu dan nikmati</p>
+            <p>
+              fitur - fitur
+              <strong> PRO</strong>
             </p>
-                    </div>
-                    <div>
-                        <Form className="form-modal">
-                            <Form.Group controlId="formBasicEmail">
-                                <Form.Label>Email address</Form.Label>
-                                <Form.Control type="email" placeholder="Enter email" />
-                            </Form.Group>
-                            <Form.Group controlId="formBasicPassword">
-                                <Form.Label>Password</Form.Label>
-                                <Form.Control type="password" placeholder="Password" />
-                            </Form.Group>
-                        </Form>
-                    </div>
-                    <nav>
-                        <div className="Footer-btn">
-                            {/* <Button className="Footer" onClick={handleClose}>
-                        Login
-                        </Button> */}
-                            <Link to="/Dashboard">
-                                <button className="footers">Login</button>
-                            </Link>
-                        </div>
-                    </nav>
-                </Modal>
+            <h4>Breednder : 098131323</h4>
+            <div className="justify-content-center d-flex">
+              <input
+                className="input-payment"
+                placeholder=" Masukan No.Rek"
+                text="text"
+              />
             </div>
-        </>
-    );
+            <img className="img-payment" src={require("./Image/img.PNG")} />
+          </div>
+          {/* <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button> */}
+          <div>
+            <button className="btn-payment" onClick={handleClose}>
+              <p>Save Changes</p>
+            </button>
+          </div>
+        </div>
+      </Modal>
+    </>
+  );
 }
-  
 export default Payment;
-  
