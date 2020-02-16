@@ -1,16 +1,34 @@
 import React, { Component, useState } from "react";
-import { Modal, Form, Button } from "react-bootstrap";
+import { Modal, Form, ButtonToolbar } from "react-bootstrap";
+import Alertkonfrim from "./Alertkonfrim";
+import { Redirect } from "react-router-dom";
 import "./Payment.css";
 import { Link } from "react-router-dom";
 
 function Payment() {
   const [show, setShow] = useState(false);
+  const [showAlCon, setShowAlCon] = useState(false);
+  const [pay, setPay] = useState(false);
 
-  const handleClose = () => setShow(false);
+  const handleClose = () => {
+    setShow(false);
+    setShowAlCon(true);
+    setTimeout(() => {
+      setPay(true);
+    }, 3000);
+  };
   const handleShow = () => setShow(true);
+
+  const handleCloseAlCon = () => {
+    setShowAlCon(false);
+  };
+
+  const handleShowAlCon = () => setShowAlCon(true);
 
   return (
     <>
+      {pay ? <Redirect to="/AddPet" /> : ""}
+
       <button
         className="atas-btn"
         variant="outline-danger"
@@ -43,12 +61,19 @@ function Payment() {
             Close
           </Button> */}
           <div>
-            <button className="btn-payment" onClick={handleClose}>
+            {/* <button className="btn-payment" onClick={handleClose}>
               <p>Save Changes</p>
-            </button>
+            </button> */}
+            <ButtonToolbar>
+              {/* <Button variant="outline-light" className="login" onClick={this.Modallogin.handleShow}>Login</Button> */}
+              <button className="btn-payment" onClick={handleClose}>
+                <p>Save Changes</p>
+              </button>
+            </ButtonToolbar>
           </div>
         </div>
       </Modal>
+      <Alertkonfrim action={handleCloseAlCon} show={showAlCon} />
     </>
   );
 }
