@@ -1,9 +1,8 @@
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
-html,
-body {
+.rootCard {
   overscroll-behavior-y: contain;
   margin: 0;
   padding: 0;
@@ -14,8 +13,7 @@ body {
   position: fixed;
   overflow: hidden;
 }
-
-#root {
+*/ .wrapperCardSwipe {
   background: salmon;
   position: fixed;
   overflow: hidden;
@@ -26,7 +24,7 @@ body {
     auto;
 }
 
-#root > div {
+.wrapperCardSwipe > div {
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -36,15 +34,16 @@ body {
   justify-content: center;
 }
 
-#root > div > div {
+.wrapperCardSwipe > div > div {
   padding: 5px;
+  margin-right: 60px;
   background-color: white;
   background-size: auto 85%;
   background-repeat: no-repeat;
   background-position: center center;
   width: 300px;
   max-width: 300px;
-  height: 550px;
+  height: 430px;
   max-height: 570px;
   will-change: transform;
   border-radius: 10px;
@@ -52,10 +51,11 @@ body {
     0 10px 10px -10px rgba(50, 50, 73, 0.3);
 }
 
-img {
-  height: 380px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+.card-swipe img {
+  height: 420px;
+  border-radius: 10px;
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
 }
 
 button[aria-label="previous"],
@@ -64,7 +64,25 @@ button[aria-label="next"] {
   color: black !important;
 }
 
-h2 {
+button[aria-label="slide 1 bullet"] {
+  color: white !important;
+}
+
+.slider > .slider-control-bottomcenter > ul > li > button {
+  position: absolute;
+  top: 0;
+  margin-top: -99999px !important;
+}
+
+.slider-control-bottomcenter {
+  bottom: 80px !important;
+}
+
+.slider-control-centerleft,
+.slider-control-centerright {
+  z-index: 2 !important;
+}
+/* h2 {
   display: inline-block;
   margin-right: 10px;
 }
@@ -81,14 +99,15 @@ h5 {
 }
 h5:last-of-type {
   color: darkgray;
-}
+} */
 
-.card > div {
-  height: 380px !important;
-}
-
-.card {
+.card-swipe > div {
   height: 500px !important;
+}
+
+.card-swipe {
+  height: 500px !important;
+  position: relative;
 }
 
 .slider-control-bottomcenter {
@@ -97,4 +116,13 @@ h5:last-of-type {
 
 .slider-control-bottomcenter > ul > li > button {
   color: salmon !important;
+}
+
+.text-Card {
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  right: 10px;
+  color: black !important;
+  font-weight: 800;
 }

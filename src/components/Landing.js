@@ -22,8 +22,12 @@ class Landing extends Component {
             {/* <Button variant="outline-warning" className="register" onClick="">Register</Button> */}
             <Register />
           </ButtonToolbar>
-          <p className="text">Swipe right.</p>
-          <p className="text2">Make your pet happy</p>
+          <p className="text">
+            Swipe <strong>&nbsp;right.</strong>
+          </p>
+          <p className="text2">
+            Make your pet <strong>&nbsp;happy</strong>
+          </p>
         </div>
 
         <div className="Footer">

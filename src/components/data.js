@@ -4,7 +4,7 @@ export default [
       "https://images.unsplash.com/photo-1520024146169-3240400354ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
     ],
     name: "Heather",
-    age: 32,
+    age: 12,
     distance: "4 miles away",
     text:
       "My nickname is Gilette because I'm the best a man can get. Also I will cut you."
@@ -38,13 +38,11 @@ export default [
   },
   {
     pics: [
-      "https://images.unsplash.com/photo-1456885284447-7dd4bb8720bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
-      "https://images.unsplash.com/photo-1532635270-c09dac425ca9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+      "http://localhost:3000/Image/bawaan2.jpg",
+      "http://localhost:3000/Image/bawaan4.jpg"
     ],
-    name: "Jane",
-    age: 22,
-    distance: "2 miles away",
-    text:
-      "On the first date I will carve our initials in a tree. It's the most romantic way to let you know I have a knife."
+    name: "Jainudin",
+    breeder: "Jamal",
+    jarak: "10 Kilometer lagi"
   }
 ];

@@ -15,6 +15,7 @@ import Modallogin from "./Modallogin";
 import "./Dashboard.css";
 import { Link } from "react-router-dom";
 import Datakucing from "../data/datakucing.json";
+import Deck from "./Deck";
 
 class Dashboard extends Component {
   render() {
@@ -79,7 +80,7 @@ class Dashboard extends Component {
                     }}
                   >
                     {Datakucing.map(m => (
-                      <Col sm={4}>
+                      <Col sm={4} className="mt-5">
                         <Card className="Gambar">
                           <img src={m.image} />
                           <p>{m.name}</p>
@@ -107,7 +108,15 @@ class Dashboard extends Component {
             <Col md={8}>
               <div className="Dashboard-Background">
                 <div className="kanan-dashboard">
-                  <Col md={4}>
+                  <div
+                    className="rootCard"
+                    style={{ left: "20%", marginTop: "-105px" }}
+                  >
+                    <div className="wrapperCardSwipe">
+                      <Deck />
+                    </div>
+                  </div>
+                  {/* <Col md={4}>
                     <Card className="kanan-Gambar">
                       <img
                         style={{
@@ -141,10 +150,11 @@ class Dashboard extends Component {
                         className="foward"
                         src={require("./Image/arrow.png")}
                       />
+                      
                     </Card>
-                  </Col>
+                  </Col> */}
                 </div>
-                <div>
+                <div style={{ marginTop: "450px" }}>
                   <Row>
                     <Col sm={3}>
                       <div className="icon-reload">
