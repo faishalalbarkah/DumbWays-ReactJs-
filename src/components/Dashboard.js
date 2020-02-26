@@ -154,7 +154,7 @@ class Dashboard extends Component {
                     </Card>
                   </Col> */}
                 </div>
-                <div style={{ marginTop: "450px" }}>
+                <div style={{ marginTop: "550px" }}>
                   <Row>
                     <Col sm={3}>
                       <div className="icon-reload">
