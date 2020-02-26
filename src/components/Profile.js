@@ -7,6 +7,17 @@ import EditPet from "./EditProfile";
 import Landing from "./Landing";
 
 class Profile extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      value: 0
+    };
+  }
+
+  handleChange = event => {
+    this.setState({ value: event.target.value });
+  };
   render() {
     return (
       <div>
@@ -55,9 +66,16 @@ class Profile extends Component {
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12Km.
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {this.state.value}Km.
               </p>
-              <input className="range" type="range" />
+              <input
+                className="range"
+                type="range"
+                maxValue={100}
+                minValue={0}
+                value={this.state.value}
+                onChange={this.handleChange}
+              />
             </div>
             <div>
               <Form.Group className="age-form">

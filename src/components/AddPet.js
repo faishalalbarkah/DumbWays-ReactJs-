@@ -4,6 +4,17 @@ import "./EditProfile.css";
 import { Link } from "react-router-dom";
 
 class AddPet extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      value: 0
+    };
+  }
+
+  handleChange = event => {
+    this.setState({ value: event.target.value });
+  };
   render() {
     return (
       <div>
@@ -52,9 +63,16 @@ class AddPet extends Component {
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12Km.
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {this.state.value}Km.
               </p>
-              <input className="range" type="range" />
+              <input
+                className="range"
+                type="range"
+                maxValue={100}
+                minValue={0}
+                value={this.state.value}
+                onChange={this.handleChange}
+              />
             </div>
             <div>
               <Form.Group className="age-form">
@@ -75,7 +93,7 @@ class AddPet extends Component {
                   <option>Sugar Glider</option>
                 </Form.Control>
               </Form.Group>
-              <button className="login-btn">Login</button>
+              <button className="login-btn">Logout</button>
             </div>
           </Col>
 

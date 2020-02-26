@@ -224,6 +224,8 @@
   border: none;
   padding: 0;
   background: none;
+  width: 400px;
+  margin-left: 10px;
 }
 
 .range::-webkit-slider-runnable-track {
